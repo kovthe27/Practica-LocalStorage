@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Buscar mascotas</h1>
+    <form>
+        <div>
+            <label for="txtId">Id</label>
+            <input type="text" id="txtId">
+        </div>
+
+        <button type="button" id="btnBuscar">Buscar código</button>
+        <div>
+            <label for="txtIndice">La mascota se encuenta en el índice </label>
+            <output id="txtIndice"></output>
+        </div>
+        
+    </form>
+
+   
+    <hr>
+
+    <h1>Registrar mascota</h1>
+    <form>
+        <div>
+            <label for="txtId">Id</label>
+            <input type="text" id="txtId">
+        </div>
+
+        <div>
+            <label for="txtNombre">Nombre</label>
+            <input type="text" id="txtNombre">
+        </div>
+
+        <div>
+            <label for="txtAnimal">Tipo de animal</label>
+            <select>Tipo de animal
+                <option>Seleccione el tipo de animal</option>
+                <option value="1">Gato</option>
+                <option value="2">Perro</option>
+                <option value="3">Dragón</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="txtEdad">Edad</label>
+            <input type="number" id="txtEdad">
+        </div>
+
+        <button type="button" id="btnRegistrar">Registrar animal</button>
+
+        <table id="tblMascotas">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>Edad</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+                </tbody>
+            </table>
+
+    </form>
+    
+    <script src="js/apartamentos/servicio_apartamentos.js"></script>
+    <script src="js/apartamentos/controlador_apartamentos.js"></script>
+</body>
+</html>
